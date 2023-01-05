@@ -18,6 +18,11 @@ namespace CSharp.Assignment.ASM1
             get { return this.mauso; }
             set { this.mauso = value; }
         }
+        //
+        public virtual void print()
+        {
+            Console.WriteLine("heelo");
+        }
 
         // constructor
         public Fraction() { }

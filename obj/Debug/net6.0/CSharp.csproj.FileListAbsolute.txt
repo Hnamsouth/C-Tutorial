@@ -1,0 +1,15 @@
+F:\ProgramData\VisualStudioData\CSharp\CSharp\bin\Debug\net6.0\CSharp.exe
+F:\ProgramData\VisualStudioData\CSharp\CSharp\bin\Debug\net6.0\CSharp.deps.json
+F:\ProgramData\VisualStudioData\CSharp\CSharp\bin\Debug\net6.0\CSharp.runtimeconfig.json
+F:\ProgramData\VisualStudioData\CSharp\CSharp\bin\Debug\net6.0\CSharp.dll
+F:\ProgramData\VisualStudioData\CSharp\CSharp\bin\Debug\net6.0\CSharp.pdb
+F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\CSharp.csproj.AssemblyReference.cache
+F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\CSharp.GeneratedMSBuildEditorConfig.editorconfig
+F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\CSharp.AssemblyInfoInputs.cache
+F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\CSharp.AssemblyInfo.cs
+F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\CSharp.csproj.CoreCompileInputs.cache
+F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\CSharp.dll
+F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\refint\CSharp.dll
+F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\CSharp.pdb
+F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\CSharp.genruntimeconfig.cache
+F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\ref\CSharp.dll
