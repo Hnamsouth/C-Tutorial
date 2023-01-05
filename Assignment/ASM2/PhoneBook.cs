@@ -8,17 +8,22 @@ namespace CSharp.Assignment.ASM2
 {
     internal class PhoneBook : Phone
     {
-        List<PhoneNumber> PhoneList= new List<PhoneNumber>();
+        private List<PhoneNumber> phonelist = new List<PhoneNumber>();
+        public List<PhoneNumber> PhoneList { 
+            get { return phonelist; }
+            set { phonelist = value; }
+        }
+        public PhoneBook() { }
         public override void InsertPhone(string n, string p)
         {
             PhoneList.ForEach( pl =>
             {
                 if (pl.name.Equals(n))
                 {
-                    if (pl.phone.Contains(p)){
+                    if (pl.Phone.Contains(p)){
                         return ;
                     }else{
-                        pl.phone.Add(p);
+                        pl.Phone.Add(p);
                     }
                     return;
                 }
@@ -26,18 +31,22 @@ namespace CSharp.Assignment.ASM2
             PhoneList.Add(new PhoneNumber(n, p));
         }
 
-        public override void RemovePhone(string n)
+        public override bool RemovePhone(string n)
         {
-            PhoneList.ForEach(pl => {
-                if (pl.name.Equals(n)){
+            foreach (PhoneNumber pl in PhoneList)
+            {
+                if (pl.name.Equals(n))
+                {
                     PhoneList.Remove(pl);
-                    return;
-                } 
-            });
+                    return true;
+                }
+            }
+            return false;
         }
 
         public override PhoneNumber SearchPhone(string n)
         {
+            
             foreach(PhoneNumber pl in PhoneList){
                 if (pl.name.Equals(n)){
                     return pl;
@@ -69,26 +78,25 @@ namespace CSharp.Assignment.ASM2
 
         }
 
-        public override void UpdatePhone(string n, string oldPhone, string newPhone)
+        public override bool UpdatePhone(string n, string oldPhone, string newPhone)
         {
-            PhoneList.ForEach(pl =>
+            foreach(PhoneNumber pl in PhoneList)
             {
                 if (pl.name.Equals(n))
                 {
-                    if (pl.phone.Contains(oldPhone))
+                    if (pl.Phone.Contains(oldPhone)){
+                        pl.Phone.Remove(oldPhone);
+                        pl.Phone.Add(newPhone);
+                        return true;
+                    }else
                     {
-                        pl.phone.Remove(oldPhone);
-                        pl.phone.Add(newPhone); 
-                        return;
-                    }else{
                         Console.WriteLine("ko tim thay so can sua");
                     }
-                    return;
-                }else
-                {
+                }else{
                     Console.WriteLine("ten khong chinh xac");
                 }
-            });
+            }
+            return false;
         }
     }
 }

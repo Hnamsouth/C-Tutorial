@@ -10,7 +10,7 @@ namespace CSharp.PracticeHome.P1
         public sealed override void print()
         {
         }
-        static void Main(string[] args)
+        static void Main1(string[] args)
         {
             // neu lop duoc ke thua thi tat ca cac thuoc tinh deu duoc ke thua.doi voi thuoc tinh co private thi ko the truy cap truc tiep (co the dung getter va setter)
             Test t = new();
