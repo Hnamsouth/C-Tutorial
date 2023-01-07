@@ -8,7 +8,7 @@ namespace CSharp.Assignment.ASM2
 {
     internal class RunTest
     {
-        static void Main(string[] args)
+        static void MainT(string[] args)
         {
             PhoneBook pb= new PhoneBook();
             pb.InsertPhone("hoang a", "1");

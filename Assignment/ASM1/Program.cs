@@ -5,8 +5,8 @@ namespace CSharp.Assignment.ASM1
 {
      class Program
     {
-        /* 
-              public static void Main(string[] args)
+
+              public static void MainP(string[] args)
         {
             Fraction f = new();
             f.TuSo = 5;
@@ -15,6 +15,6 @@ namespace CSharp.Assignment.ASM1
             f.InPhanSo();
 
         }
-         */
+   
     }
 }
