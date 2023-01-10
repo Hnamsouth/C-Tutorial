@@ -13,3 +13,5 @@ F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\refint\CSharp.dll
 F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\CSharp.pdb
 F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\CSharp.genruntimeconfig.cache
 F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\ref\CSharp.dll
+F:\ProgramData\VisualStudioData\CSharp\CSharp\bin\Debug\net6.0\Newtonsoft.Json.dll
+F:\ProgramData\VisualStudioData\CSharp\CSharp\obj\Debug\net6.0\CSharp.csproj.CopyComplete
