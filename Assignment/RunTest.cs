@@ -1,6 +1,7 @@
 ﻿using CSharp.Assignment.ASM1;
 using CSharp.Assignment.ASM2;
 using CSharp.Assignment.ASM3;
+using CSharp.Assignment.ASM4;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,18 @@ namespace CSharp.Assignment
 {
     internal class RunTest
     {
+        static void Main(string[] args) // ASM4
+        {
+            int[] RateList = new int[3];
+            RateList[0] = 3;
+            RateList[1] = 4;
+            RateList[2] = 5;
+
+            News n = new News(1, "Title","01-10-2023", "Author", "Content");
+            n.Calculate(RateList);
+            n.Display();
+    }
+
         public static void Main1(string[] args)
         {
             Fraction f = new();

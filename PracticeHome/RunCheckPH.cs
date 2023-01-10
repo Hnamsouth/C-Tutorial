@@ -14,7 +14,7 @@ namespace CSharp.PracticeHome
     internal class RunCheckPH
     {
 
-        static void Main(string[] args) //ss4
+        static void MainTest(string[] args) //ss4
         {
             DelegateDeMo.Alert("asd");
             DelegateDeMo d= new DelegateDeMo();
