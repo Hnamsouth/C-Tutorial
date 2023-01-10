@@ -24,7 +24,7 @@ namespace CSharp.Assignment
             n.Display();
     }
 
-        public static void Main1(string[] args)
+        public static void Main1(string[] args) // ASM1
         {
             Fraction f = new();
             f.TuSo = 5;
@@ -32,7 +32,7 @@ namespace CSharp.Assignment
             f.NghichDaoPS();
             f.InPhanSo();
         }
-        static void Main2(string[] args)
+        static void Main2(string[] args) // ASM2
         {
             PhoneBook pb = new PhoneBook();
             pb.InsertPhone("hoang a", "1");
@@ -43,7 +43,7 @@ namespace CSharp.Assignment
 
             Console.WriteLine("remove phone : " + pb.RemovePhone("hoang b"));
         }
-        static void Main3(string[] args)
+        static void Main3(string[] args) // ASM3
         {
             CtmVN vn = new CtmVN() { MKH = "1", HoTen = "hoang nam", NgayRHH = "02/03/2022", SoLuong = 75 };
             vn.ThanhTien();

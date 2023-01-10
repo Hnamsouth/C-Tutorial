@@ -43,7 +43,6 @@ namespace CSharp.Assignment.ASM4
             {
                 a += i;
             }
-            News n = new();
             averagerate = a / RateList.Length;
         }
 
@@ -54,7 +53,7 @@ namespace CSharp.Assignment.ASM4
                 "PublishDate : " + PublishDate+ "\n"+
                 "Author : " + Author +          "\n"+
                 "Content : " + Content +        "\n"+
-                "AverageRate : " + AverageRate
+                "AverageRate : " + averagerate
                 );
         }
     }
