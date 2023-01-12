@@ -12,7 +12,7 @@ namespace CSharp.Assignment
 {
     internal class RunTest
     {
-        static void Main(string[] args) // ASM4
+        static void Main4(string[] args) // ASM4
         {
             int[] RateList = new int[3];
             RateList[0] = 3;

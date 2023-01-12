@@ -1,10 +1,14 @@
 ﻿using CSharp.PracticeHome.Session3;
 using CSharp.PracticeHome.session4;
+using CSharp.PracticeHome.Session5;
 using Microsoft.VisualBasic;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Net;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -13,7 +17,65 @@ namespace CSharp.PracticeHome
     //public delegate void PrintString(String s);
     internal class RunCheckPH
     {
+        // call api
 
+        static async Task<RootWeather> CallAPIDemo2()
+        {
+            string url = "https://api.openweathermap.org/data/2.5/weather?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric";
+            HttpClient http = new HttpClient();
+            var rs = await http.GetAsync(url);
+            if(rs.StatusCode == HttpStatusCode.OK)
+            {
+                // rs.Content : return content of http response message
+                string content = await rs.Content.ReadAsStringAsync();
+                // convert to object
+                RootWeather rwt = JsonConvert.DeserializeObject<RootWeather>(content);
+                return rwt;
+            }
+            return null;
+        }
+
+        static async void GDT()
+        {
+            CallApi c = new CallApi();
+            RootWeather rwt = await c.GetData();
+            Console.WriteLine(rwt.main.temp);
+        }
+
+
+        public static void Main(string[] args)
+        {
+            GDT();
+
+            //CallAPIDemo2();
+
+            /*
+            Thread t1 = new Thread(RunThread);
+            t1.Start();
+            //t1.IsBackground = true;
+
+            Thread t2 = new Thread(delegate (){
+
+                Console.WriteLine("thread Delegate demo");
+                //
+                Thread.Sleep(1000);
+            });
+            t2.Start();
+
+            Thread t3 = new Thread(RunThread);
+            t3.Start("nfks"); // any data
+            Console.WriteLine("Main end");
+            */
+        }
+
+
+
+        static void RunThread(object o)
+        {
+            for(int i=0; i<5; i++) {
+                Console.WriteLine(o + " - " + i);
+            }
+        }
         static void MainTest(string[] args) //ss4
         {
             DelegateDeMo.Alert("asd");
