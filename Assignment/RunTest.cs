@@ -1,4 +1,5 @@
-﻿using CSharp.Assignment.ASM1;
+﻿using CSharp.Assignment.AGM5.house.hanoi;
+using CSharp.Assignment.ASM1;
 using CSharp.Assignment.ASM2;
 using CSharp.Assignment.ASM3;
 using CSharp.Assignment.ASM4;
@@ -12,6 +13,15 @@ namespace CSharp.Assignment
 {
     internal class RunTest
     {
+        static void Main(string[] args) // ASM 5
+        {
+            List<string> t= new List<string>();
+            t.Add("asd");
+            t.Add("qwe");
+            t.Add("zxc");
+            Console.WriteLine(t.Find(x => x.Equals("qwe")));
+        }
+
         static void Main4(string[] args) // ASM4
         {
             int[] RateList = new int[3];

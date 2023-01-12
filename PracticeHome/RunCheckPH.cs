@@ -43,7 +43,7 @@ namespace CSharp.PracticeHome
         }
 
 
-        public static void Main(string[] args)
+        public static void Mainch(string[] args)
         {
             GDT();
 

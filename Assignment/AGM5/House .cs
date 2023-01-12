@@ -27,9 +27,9 @@ namespace CSharp.Assignment.AGM5.house.cm
         public House() { }
         public House(string soNha, string diaChi, string loaiNha)
         {
-            this.soNha = soNha;
-            this.diaChi = diaChi;
-            this.loaiNha = loaiNha;
+            this.sonha = soNha;
+            this.diachi = diaChi;
+            this.loainha = loaiNha;
         }
 
         // overide interface

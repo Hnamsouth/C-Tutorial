@@ -7,7 +7,7 @@ using System.Text;
 
 namespace CSharp.Assignment.AGM5.house.hanoi
 {
-    internal class HaNoiHouse : House
+     class HaNoiHouse : House
     {
         // attribu
         private String tenQuan;
@@ -23,7 +23,7 @@ namespace CSharp.Assignment.AGM5.house.hanoi
         public override void input() { }
 
     }
-    internal class ManagerHouse
+     class ManagerHouse
     {
         List<HaNoiHouse> listHNH;
         public ManagerHouse()
