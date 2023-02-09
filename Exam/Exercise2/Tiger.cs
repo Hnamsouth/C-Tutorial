@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharp.Exam.Exercise2
 {
-    internal class Tiger:Human
+    internal class Tiger: Animal
     {
         public Tiger(double weight, string name)
         {

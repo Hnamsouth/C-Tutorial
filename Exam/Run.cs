@@ -17,6 +17,7 @@ namespace CSharp.Exam
             c1.Process();
             c1.Result();
         } 
+
         static void Main(string[] args) // Exercise 2:
         {
             Lion l1 = new Lion(100,"Lion");
