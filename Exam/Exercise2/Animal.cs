@@ -14,14 +14,14 @@ namespace CSharp.Exam.Exercise2
         public string Name { get => this.name;set=>this.name = value; }
         public double Weight { get => this.weight; set=>this.weight = value; }
 
-        public virtual void Show()
+        public  void Show()
         {
             Console.WriteLine(
                 "Name: "+ Name+"\t"+
                 "Weight: " + Weight
                 );
         }
-        public virtual void SetMe(double weight, string name)
+        public  void SetMe(double weight, string name)
         {
             Weight = weight;
             Name=name;

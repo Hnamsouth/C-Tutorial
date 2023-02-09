@@ -14,7 +14,6 @@ namespace CSharp.Exam.Exercise1
         private double LateralArea { get; set; }
         private double TotalArea { get; set; }
         private double Volume { get; set; }
-        public Cylinder() { }
         public Cylinder(double r,double h) {
             Radius= r;
             Height= h;
