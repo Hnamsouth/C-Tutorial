@@ -13,7 +13,11 @@ namespace CSharp.Assignment
 {
     internal class RunTest
     {
-        static void Main(string[] args) // ASM 5
+        static void Main6(string[] args) // ASM6
+        {
+
+        }
+        static void Main5(string[] args) // ASM 5
         {
             List<string> t= new List<string>();
             t.Add("asd");
